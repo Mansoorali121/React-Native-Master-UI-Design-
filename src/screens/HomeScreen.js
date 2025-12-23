@@ -18,13 +18,13 @@ const HomeScreen = () => {
           color: '#1D150F',
           fontSize: s(20),
           fontWeight: 'semibold',
-          marginBottom: vs(6),
+          marginBottom: vs(7),
         }}
       >
         Meditations
       </Text>
       <Text style={{ color: '#2C2016', fontSize: s(14), marginBottom: vs(16) }}>
-        Lorem Ipsum simply dummy text
+        Exercise to help you focus 
       </Text>
       <TopTabs />
       {/* <MediaAtionCard /> */}
