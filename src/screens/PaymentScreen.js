@@ -4,6 +4,10 @@ import { s, vs } from 'react-native-size-matters';
 import BackButton from '../components/BackButton';
 import PaymentCard from '../components/PaymentCard';
 import PaymentList from '../components/PaymentList';
+import BankCardbox from '../components/BankCardbox';
+import NewButton from '../components/NewButton';
+import Totaltext from '../components/Totaltext';
+import Submitbutton from '../components/SubmitButton';
 
 const PaymentScreen = () => {
   return (
@@ -26,6 +30,21 @@ const PaymentScreen = () => {
       {/* <PaymentCard title="Cash" />
       <PaymentCard isselected={true} /> */}
     <PaymentList />
+    {/* Payment Card */}
+    <View style={{paddingHorizontal:vs(16)}}>
+
+    <BankCardbox/>
+     {/* Add Card Button */}
+    <NewButton/>
+    {/* To Show total text  */}
+     <Totaltext/>
+
+ {/* Submit Button  */}
+ <Submitbutton/>
+
+    </View>
+   
+
     </View>
   );
 };

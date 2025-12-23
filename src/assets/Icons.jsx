@@ -1,5 +1,5 @@
 import * as React from "react";
-import Svg, { Path } from "react-native-svg";
+import Svg, { Mask, Rect, G, Path } from "react-native-svg";
 export const Sendicon = (props:SvgProps) => (
   <Svg
     width={18}
@@ -134,6 +134,82 @@ export const PaypalIcon = (props:SvgProps) => (
     <Path
       d="M21.0346 7.19516C20.8482 7.14073 20.66 7.09254 20.4704 7.05067C20.2719 7.00701 20.0721 6.96904 19.8714 6.93681C19.153 6.82053 18.3682 6.76564 17.5255 6.76564H10.416C10.2463 6.76526 10.0788 6.80336 9.92597 6.87707C9.75978 6.95641 9.61543 7.07506 9.50542 7.22275C9.39541 7.37044 9.32306 7.54272 9.29464 7.72467L7.78351 17.306L7.73987 17.5853C7.83927 16.9549 8.37848 16.4898 9.01708 16.4898H11.6786C16.9056 16.4898 20.9983 14.3668 22.1938 8.22518C22.2294 8.04354 22.2593 7.86752 22.2867 7.69403C21.984 7.5342 21.6563 7.3961 21.3034 7.27905C21.2143 7.24953 21.1248 7.22156 21.0347 7.19516"
       fill="#1F264F"
+    />
+  </Svg>
+);
+
+
+export const Card = (props:SvgProps) => (
+  <Svg
+    width={169}
+    height={107}
+    viewBox="0 0 169 107"
+    fill="none"
+    {...props}
+  >
+    <Mask
+      id="mask0_21_75"
+      style={{
+        maskType: "luminance",
+      }}
+      maskUnits="userSpaceOnUse"
+      x={0}
+      y={0}
+      width={169}
+      height={107}
+    >
+      <Rect width={168.196} height={106.203} rx={14} fill="white" />
+    </Mask>
+    <G mask="url(#mask0_21_75)">
+      <Rect
+        x={-0.000976562}
+        y={0.000152588}
+        width={168.196}
+        height={106.203}
+        rx={3}
+        fill="#FF7622"
+      />
+      <Path
+        d="M124.705 110.192L92.8643 73.9853L73.7651 95.6882L124.213 153.053H162.399L124.705 110.192Z"
+        fill="#FECB5F"
+      />
+      <Path
+        d="M124.705 84.1301L162.398 127.053H200.584L143.804 62.3957L124.705 84.1301Z"
+        fill="#F8F9FA"
+      />
+      <Path
+        d="M59.0093 -14.7408L123.804 58.6985L180.584 123.053H209.369V112.398L78.0958 -36.388L59.0093 -14.7408Z"
+        fill="#EB001B"
+      />
+      <Path
+        d="M144.243 17.906L198.368 79.4324V36.0255L163.342 -3.80453L144.243 17.906Z"
+        fill="#FECB5F"
+      />
+    </G>
+  </Svg>
+);
+
+export const Plusicon = (props:SvgProps) => (
+  <Svg
+    width={17}
+    height={18}
+    viewBox="0 0 17 18"
+    fill="none"
+    {...props}
+  >
+    <Path
+      d="M8.07095 1.92893V16.0711"
+      stroke="#FF7622"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <Path
+      d="M0.999878 9H15.142"
+      stroke="#FF7622"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );

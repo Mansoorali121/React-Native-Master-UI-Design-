@@ -23,7 +23,11 @@ const PaymentList = () => {
       <FlatList
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: s(16), paddingHorizontal: s(16), marginTop:vs(15) }}
+        contentContainerStyle={{
+          gap: s(16),
+          paddingHorizontal: s(16),
+          marginTop: vs(15),
+        }}
         data={Paymentmethods}
         keyExtractor={item => item.label}
         renderItem={({ item }) => (
