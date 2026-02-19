@@ -5,10 +5,11 @@ import ContactUsScreen from './src/screens/ContactUsScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import PaymentScreen from './src/screens/PaymentScreen';
 import Index from './srcc';
+import AppNavigator from './srcc/navigation/AppNavigator';
 
 const App = () => {
   return (
-    <Index />
+    <AppNavigator />
   )
 }
 
